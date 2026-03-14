@@ -101,3 +101,44 @@ text-decoration:underline;
 
 </body>
 </html>
+.logout{
+display:block;
+margin-top:15px;
+text-align:center;
+color:#1a73e8;
+text-decoration:none;
+font-weight:500;
+}
+
+.logout:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Campus Dashboard</h2>
+
+<p>You are logged in as <b><?php echo $_SESSION['user']; ?></b></p>
+
+<hr>
+
+<a class="btn" href="post_lost.php">Post Lost Item</a>
+
+<a class="btn" href="view_lost.php">View Lost Items</a>
+
+<a class="btn" href="post_ride.php">Post Travel Ride</a>
+
+<a class="btn" href="view_rides.php">View Travel Rides</a>
+
+<a class="logout" href="logout.php">Logout</a>
+
+</div>
+
+</body>
+</html>
